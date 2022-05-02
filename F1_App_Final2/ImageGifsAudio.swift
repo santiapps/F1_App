@@ -16,7 +16,7 @@ class ImageGifsAudio{
     var image4 = ["era4_1", "era4_2", "era4_3", "era4_4", "era4_5"]
     var image5 = ["era5_1"]
     var image6 = ["era6_1", "era6_2", "era6_3"]
-    var image7 = ["era7_1", "era7_2", "era3_3"]
+    var image7 = ["era7_1", "era7_2", "era7_3"]
     var image8 = ["era8_1", "era8_2"]
     var image9 = ["era9_1", "era9_2", "era9_3"]
 

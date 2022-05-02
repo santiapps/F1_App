@@ -122,7 +122,7 @@
                         <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="-1" estimatedSectionHeaderHeight="-1" sectionFooterHeight="-1" estimatedSectionFooterHeight="-1" translatesAutoresizingMaskIntoConstraints="NO" id="iCL-Gm-rTE">
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" allowsSelection="NO" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="-1" estimatedSectionHeaderHeight="-1" sectionFooterHeight="-1" estimatedSectionFooterHeight="-1" translatesAutoresizingMaskIntoConstraints="NO" id="iCL-Gm-rTE">
                                 <rect key="frame" x="0.0" y="44" width="320" height="524"/>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                                 <prototypes>
@@ -179,7 +179,7 @@
                         <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="-1" estimatedSectionHeaderHeight="-1" sectionFooterHeight="-1" estimatedSectionFooterHeight="-1" translatesAutoresizingMaskIntoConstraints="NO" id="8nz-3f-tSx">
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" allowsSelection="NO" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="-1" estimatedSectionHeaderHeight="-1" sectionFooterHeight="-1" estimatedSectionFooterHeight="-1" translatesAutoresizingMaskIntoConstraints="NO" id="8nz-3f-tSx">
                                 <rect key="frame" x="0.0" y="44" width="320" height="524"/>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                                 <prototypes>
@@ -285,7 +285,7 @@
                     </connections>
                 </tapGestureRecognizer>
             </objects>
-            <point key="canvasLocation" x="-778" y="77"/>
+            <point key="canvasLocation" x="-439" y="75"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="uap-qr-3Pu">
@@ -306,7 +306,7 @@
             </objects>
             <point key="canvasLocation" x="364" y="76"/>
         </scene>
-        <!--Historical Info-->
+        <!--Historical F1 Eras-->
         <scene sceneID="GAx-0d-Wo7">
             <objects>
                 <viewController id="18v-3p-Z0B" customClass="HistoryViewController" customModule="F1_App_Final2" customModuleProvider="target" sceneMemberID="viewController">
@@ -318,12 +318,21 @@
                                 <rect key="frame" x="0.0" y="44" width="320" height="524"/>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                                 <prototypes>
-                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="CellHistory" id="kRh-As-BLc">
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" selectionStyle="none" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="CellHistory" textLabel="yOB-lZ-enb" style="IBUITableViewCellStyleDefault" id="kRh-As-BLc">
                                         <rect key="frame" x="0.0" y="44.5" width="320" height="43.5"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="kRh-As-BLc" id="gOG-vM-LD3">
                                             <rect key="frame" x="0.0" y="0.0" width="320" height="43.5"/>
                                             <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" insetsLayoutMarginsFromSafeArea="NO" text="Title" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="yOB-lZ-enb">
+                                                    <rect key="frame" x="16" y="0.0" width="288" height="43.5"/>
+                                                    <autoresizingMask key="autoresizingMask"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="0.0"/>
+                                                    <nil key="textColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                            </subviews>
                                         </tableViewCellContentView>
                                         <connections>
                                             <segue destination="Bta-bZ-64k" kind="show" identifier="ShowDetail" id="vgc-ed-8tk"/>
@@ -341,7 +350,7 @@
                             <constraint firstItem="b8G-Co-UYh" firstAttribute="bottom" secondItem="aqM-FZ-Tg4" secondAttribute="bottom" id="H0d-FO-aYd"/>
                         </constraints>
                     </view>
-                    <navigationItem key="navigationItem" title="Historical Info" id="JR9-cU-TwY"/>
+                    <navigationItem key="navigationItem" title="Historical F1 Eras" id="JR9-cU-TwY"/>
                     <connections>
                         <outlet property="tableView" destination="aqM-FZ-Tg4" id="0g6-sO-i9m"/>
                     </connections>
@@ -364,11 +373,14 @@
                                     <constraint firstAttribute="height" constant="250" id="8AL-BX-ESP"/>
                                 </constraints>
                             </imageView>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="It3-0s-0X2">
-                                <rect key="frame" x="112" y="360" width="97" height="31"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="It3-0s-0X2">
+                                <rect key="frame" x="69.5" y="344" width="181" height="50"/>
+                                <color key="backgroundColor" white="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <state key="normal" title="Button"/>
-                                <buttonConfiguration key="configuration" style="plain" title="Play Sound"/>
+                                <buttonConfiguration key="configuration" style="plain" title="Play Sound">
+                                    <fontDescription key="titleFontDescription" type="boldSystem" pointSize="30"/>
+                                    <color key="baseForegroundColor" white="1" alpha="0.99917218539999997" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </buttonConfiguration>
                                 <connections>
                                     <action selector="playSound:" destination="Bta-bZ-64k" eventType="touchUpInside" id="5pH-7B-MwC"/>
                                 </connections>
@@ -377,6 +389,8 @@
                         <viewLayoutGuide key="safeArea" id="fd5-Ml-sE4"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
+                            <constraint firstItem="It3-0s-0X2" firstAttribute="top" secondItem="S8b-ws-eCp" secondAttribute="bottom" constant="50" id="G7C-Uy-drw"/>
+                            <constraint firstItem="It3-0s-0X2" firstAttribute="centerX" secondItem="R52-U8-lMo" secondAttribute="centerX" id="IfP-Ry-Iel"/>
                             <constraint firstItem="S8b-ws-eCp" firstAttribute="leading" secondItem="fd5-Ml-sE4" secondAttribute="leading" id="WES-2x-nsT"/>
                             <constraint firstItem="S8b-ws-eCp" firstAttribute="top" secondItem="fd5-Ml-sE4" secondAttribute="top" id="Wbj-O9-V2t"/>
                             <constraint firstItem="fd5-Ml-sE4" firstAttribute="trailing" secondItem="S8b-ws-eCp" secondAttribute="trailing" id="e0f-TU-z52"/>
@@ -389,7 +403,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="vwV-VT-HrD" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1984" y="942"/>
+            <point key="canvasLocation" x="906" y="1784"/>
         </scene>
         <!--F1 Schedule-->
         <scene sceneID="FoT-3w-EHW">
@@ -399,7 +413,7 @@
                         <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="-1" estimatedSectionHeaderHeight="-1" sectionFooterHeight="-1" estimatedSectionFooterHeight="-1" translatesAutoresizingMaskIntoConstraints="NO" id="F9Y-fo-RVp">
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" allowsSelection="NO" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="-1" estimatedSectionHeaderHeight="-1" sectionFooterHeight="-1" estimatedSectionFooterHeight="-1" translatesAutoresizingMaskIntoConstraints="NO" id="F9Y-fo-RVp">
                                 <rect key="frame" x="0.0" y="44" width="320" height="524"/>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                                 <prototypes>
@@ -446,7 +460,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="UKH-6n-AjQ" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2783" y="828"/>
+            <point key="canvasLocation" x="2783" y="862"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="hYC-68-2cr">
@@ -464,7 +478,7 @@
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="HWk-3m-los" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-1772" y="77"/>
+            <point key="canvasLocation" x="-1324" y="75"/>
         </scene>
     </scenes>
     <resources>
