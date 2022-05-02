@@ -11,7 +11,7 @@ class ScheduleData{
     
     
     struct Returned3: Codable {
-        let mrData: MRData
+        var mrData: MRData
         
         enum CodingKeys: String, CodingKey {
             case mrData = "MRData"
@@ -19,11 +19,13 @@ class ScheduleData{
     }
     
     struct MRData: Codable {
-        let xmlns: String
-        let series: String
-        let url: String
-        let limit, offset, total: String
-        let raceTable: RaceTable
+        var xmlns: String
+        var series: String
+        var url: String
+        var limit: String
+        var offset: String
+        var total: String
+        var raceTable: RaceTable
         
         enum CodingKeys: String, CodingKey {
             case xmlns, series, url, limit, offset, total
@@ -32,8 +34,8 @@ class ScheduleData{
     }
     
     struct RaceTable: Codable {
-        let season: String
-        let races: [Race]
+        var season: String
+        var races: [Race]
         
         enum CodingKeys: String, CodingKey {
             case season
@@ -42,23 +44,23 @@ class ScheduleData{
     }
     
     struct Race: Codable {
-        let season, round: String
-        let url: String
-        let raceName: String
-        let circuit: Circuit
-        let date, time: String
-        let firstPractice, secondPractice: FirstPractice
-        let thirdPractice: FirstPractice?
-        let qualifying: FirstPractice
-        let sprint: FirstPractice?
+        var season, round: String
+        var url: String
+        var raceName: String
+        var circuit: Circuit
+        var date, time: String
+//        var firstPractice, secondPractice: FirstPractice
+//        var thirdPractice: FirstPractice?
+        var qualifying: FirstPractice
+        var sprint: FirstPractice?
         
         enum CodingKeys: String, CodingKey {
             case season, round, url, raceName
             case circuit = "Circuit"
             case date, time
-            case firstPractice = "FirstPractice"
-            case secondPractice = "SecondPractice"
-            case thirdPractice = "ThirdPractice"
+//            case firstPractice = "FirstPractice"
+//            case secondPractice = "SecondPractice"
+//            case thirdPractice = "ThirdPractice"
             case qualifying = "Qualifying"
             case sprint = "Sprint"
         }
@@ -78,11 +80,15 @@ class ScheduleData{
     }
     
     struct Location: Codable {
-        let lat, long, locality, country: String
+        let lat: String
+        var long: String
+        var locality: String
+        var country: String
     }
     
     struct FirstPractice: Codable {
-        let date, time: String?
+        var date: String
+        var time: String?
     }
     
     var scheduleUrlString = "https://ergast.com/api/f1/current.json"

@@ -15,11 +15,13 @@ class DriverDataClass{
     }
     
     struct MRData: Codable {
-        let xmlns: String
-        let series: String
-        let url: String
-        let limit, offset, total: String
-        let standingsTable: StandingsTable
+        var xmlns: String
+        var series: String
+        var url: String
+        var limit: String
+        var offset: String
+        var total: String
+        var standingsTable: StandingsTable
         
         enum CodingKeys: String, CodingKey {
             case xmlns, series, url, limit, offset, total
@@ -28,8 +30,8 @@ class DriverDataClass{
     }
     
     struct StandingsTable: Codable {
-        let season: String
-        let standingsLists: [StandingsList]
+        var season: String
+        var standingsLists: [StandingsList]
         
         enum CodingKeys: String, CodingKey {
             case season
@@ -38,8 +40,9 @@ class DriverDataClass{
     }
     
     struct StandingsList: Codable {
-        let season, round: String
-        let driverStandings: [DriverStanding]
+        var season: String
+        var round: String
+        var driverStandings: [DriverStanding]
         
         enum CodingKeys: String, CodingKey {
             case season, round
@@ -48,9 +51,9 @@ class DriverDataClass{
     }
     
     struct DriverStanding: Codable {
-        let position, positionText, points, wins: String
-        let driver: Driver
-        let constructors: [Constructor]
+        var position, positionText, points, wins: String
+        var driver: Driver
+        var constructors: [Constructor]
         
         enum CodingKeys: String, CodingKey {
             case position, positionText, points, wins
@@ -60,9 +63,9 @@ class DriverDataClass{
     }
     
     struct Constructor: Codable {
-        let constructorID: String
-        let url: String
-        let name, nationality: String
+        var constructorID: String
+        var url: String
+        var name, nationality: String
         
         enum CodingKeys: String, CodingKey {
             case constructorID = "constructorId"
@@ -71,9 +74,9 @@ class DriverDataClass{
     }
     
     struct Driver: Codable {
-        let driverID, permanentNumber, code: String
-        let url: String
-        let givenName, familyName, dateOfBirth, nationality: String
+        var driverID, permanentNumber, code: String
+        var url: String
+        var givenName, familyName, dateOfBirth, nationality: String
         
         enum CodingKeys: String, CodingKey {
             case driverID = "driverId"
