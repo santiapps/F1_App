@@ -14,8 +14,6 @@
 		2F0897B52819F81000341F69 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2F0897B32819F81000341F69 /* LaunchScreen.storyboard */; };
 		2F1DE2F52819FAE30034E994 /* DriverViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F1DE2F42819FAE30034E994 /* DriverViewController.swift */; };
 		2F1DE2F72819FAEB0034E994 /* TeamViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F1DE2F62819FAEB0034E994 /* TeamViewController.swift */; };
-		2F1DE2F92819FB0A0034E994 /* ScheduleViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F1DE2F82819FB0A0034E994 /* ScheduleViewController.swift */; };
-		2F1DE2FF281A008B0034E994 /* Schedule.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F1DE2FE281A008B0034E994 /* Schedule.swift */; };
 		2F1DE301281A093D0034E994 /* WelcomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F1DE300281A093D0034E994 /* WelcomeViewController.swift */; };
 		2F1DE303281A0AEF0034E994 /* SwiftGifCommon.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F1DE302281A0AEF0034E994 /* SwiftGifCommon.swift */; };
 		2F1DE305281A0BD30034E994 /* monaco_GIF.gif in Resources */ = {isa = PBXBuildFile; fileRef = 2F1DE304281A0BD20034E994 /* monaco_GIF.gif */; };
@@ -23,6 +21,14 @@
 		2F1DE30A281A5ACB0034E994 /* senna_GIF.gif in Resources */ = {isa = PBXBuildFile; fileRef = 2F1DE309281A5ACB0034E994 /* senna_GIF.gif */; };
 		2F86126F281CDB68004626EB /* DriverDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F86126E281CDB68004626EB /* DriverDataClass.swift */; };
 		2F861271281CDD24004626EB /* TeamDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F861270281CDD24004626EB /* TeamDataClass.swift */; };
+		2F94455E28204DB300052C36 /* ScheduleViewControllerNew.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F94455D28204DB300052C36 /* ScheduleViewControllerNew.swift */; };
+		2F94456028204E3000052C36 /* ScheduleData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F94455F28204E3000052C36 /* ScheduleData.swift */; };
+		2FCF27C2282050BD00C1893B /* HistoryViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2FCF27C1282050BD00C1893B /* HistoryViewController.swift */; };
+		2FCF27C42820514400C1893B /* HistoryStruct.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2FCF27C32820514400C1893B /* HistoryStruct.swift */; };
+		2FCF27C82820514F00C1893B /* ImageGifsAudio.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2FCF27C52820514F00C1893B /* ImageGifsAudio.swift */; };
+		2FCF27C92820514F00C1893B /* ErasStatsBuilder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2FCF27C62820514F00C1893B /* ErasStatsBuilder.swift */; };
+		2FCF27CA2820514F00C1893B /* CreateHistoryArray.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2FCF27C72820514F00C1893B /* CreateHistoryArray.swift */; };
+		2FCF27CC2820515800C1893B /* DetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2FCF27CB2820515800C1893B /* DetailViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -35,8 +41,6 @@
 		2F0897B62819F81000341F69 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		2F1DE2F42819FAE30034E994 /* DriverViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DriverViewController.swift; sourceTree = "<group>"; };
 		2F1DE2F62819FAEB0034E994 /* TeamViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TeamViewController.swift; sourceTree = "<group>"; };
-		2F1DE2F82819FB0A0034E994 /* ScheduleViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScheduleViewController.swift; sourceTree = "<group>"; };
-		2F1DE2FE281A008B0034E994 /* Schedule.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Schedule.swift; sourceTree = "<group>"; };
 		2F1DE300281A093D0034E994 /* WelcomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WelcomeViewController.swift; sourceTree = "<group>"; };
 		2F1DE302281A0AEF0034E994 /* SwiftGifCommon.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwiftGifCommon.swift; sourceTree = "<group>"; };
 		2F1DE304281A0BD20034E994 /* monaco_GIF.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = monaco_GIF.gif; sourceTree = "<group>"; };
@@ -44,6 +48,14 @@
 		2F1DE309281A5ACB0034E994 /* senna_GIF.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = senna_GIF.gif; sourceTree = "<group>"; };
 		2F86126E281CDB68004626EB /* DriverDataClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DriverDataClass.swift; sourceTree = "<group>"; };
 		2F861270281CDD24004626EB /* TeamDataClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TeamDataClass.swift; sourceTree = "<group>"; };
+		2F94455D28204DB300052C36 /* ScheduleViewControllerNew.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScheduleViewControllerNew.swift; sourceTree = "<group>"; };
+		2F94455F28204E3000052C36 /* ScheduleData.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ScheduleData.swift; sourceTree = "<group>"; };
+		2FCF27C1282050BD00C1893B /* HistoryViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HistoryViewController.swift; sourceTree = "<group>"; };
+		2FCF27C32820514400C1893B /* HistoryStruct.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HistoryStruct.swift; sourceTree = "<group>"; };
+		2FCF27C52820514F00C1893B /* ImageGifsAudio.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ImageGifsAudio.swift; sourceTree = "<group>"; };
+		2FCF27C62820514F00C1893B /* ErasStatsBuilder.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ErasStatsBuilder.swift; sourceTree = "<group>"; };
+		2FCF27C72820514F00C1893B /* CreateHistoryArray.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CreateHistoryArray.swift; sourceTree = "<group>"; };
+		2FCF27CB2820515800C1893B /* DetailViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DetailViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -78,23 +90,37 @@
 			children = (
 				2F0897A82819F80E00341F69 /* AppDelegate.swift */,
 				2F0897AA2819F80E00341F69 /* SceneDelegate.swift */,
-				2F1DE300281A093D0034E994 /* WelcomeViewController.swift */,
+				2F73678528204C47004C2B3E /* ViewController */,
 				2F1DE302281A0AEF0034E994 /* SwiftGifCommon.swift */,
-				2F1DE2F42819FAE30034E994 /* DriverViewController.swift */,
+				2F94455F28204E3000052C36 /* ScheduleData.swift */,
 				2F86126E281CDB68004626EB /* DriverDataClass.swift */,
-				2F1DE2F62819FAEB0034E994 /* TeamViewController.swift */,
 				2F861270281CDD24004626EB /* TeamDataClass.swift */,
-				2F1DE2F82819FB0A0034E994 /* ScheduleViewController.swift */,
-				2F1DE2FE281A008B0034E994 /* Schedule.swift */,
+				2FCF27C32820514400C1893B /* HistoryStruct.swift */,
+				2FCF27C72820514F00C1893B /* CreateHistoryArray.swift */,
+				2FCF27C62820514F00C1893B /* ErasStatsBuilder.swift */,
+				2FCF27C52820514F00C1893B /* ImageGifsAudio.swift */,
+				2FCF27CB2820515800C1893B /* DetailViewController.swift */,
 				2F0897AE2819F80E00341F69 /* Main.storyboard */,
-				2F0897B12819F81000341F69 /* Assets.xcassets */,
 				2F0897B32819F81000341F69 /* LaunchScreen.storyboard */,
+				2F0897B12819F81000341F69 /* Assets.xcassets */,
 				2F0897B62819F81000341F69 /* Info.plist */,
 				2F1DE304281A0BD20034E994 /* monaco_GIF.gif */,
 				2F1DE307281A58D80034E994 /* alonso_GIF.gif */,
 				2F1DE309281A5ACB0034E994 /* senna_GIF.gif */,
 			);
 			path = F1_App_Final2;
+			sourceTree = "<group>";
+		};
+		2F73678528204C47004C2B3E /* ViewController */ = {
+			isa = PBXGroup;
+			children = (
+				2F1DE300281A093D0034E994 /* WelcomeViewController.swift */,
+				2F1DE2F42819FAE30034E994 /* DriverViewController.swift */,
+				2F1DE2F62819FAEB0034E994 /* TeamViewController.swift */,
+				2F94455D28204DB300052C36 /* ScheduleViewControllerNew.swift */,
+				2FCF27C1282050BD00C1893B /* HistoryViewController.swift */,
+			);
+			path = ViewController;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -172,14 +198,20 @@
 			buildActionMask = 2147483647;
 			files = (
 				2F1DE2F52819FAE30034E994 /* DriverViewController.swift in Sources */,
+				2FCF27C42820514400C1893B /* HistoryStruct.swift in Sources */,
 				2F1DE301281A093D0034E994 /* WelcomeViewController.swift in Sources */,
-				2F1DE2FF281A008B0034E994 /* Schedule.swift in Sources */,
 				2F0897A92819F80E00341F69 /* AppDelegate.swift in Sources */,
+				2F94456028204E3000052C36 /* ScheduleData.swift in Sources */,
 				2F86126F281CDB68004626EB /* DriverDataClass.swift in Sources */,
-				2F1DE2F92819FB0A0034E994 /* ScheduleViewController.swift in Sources */,
+				2FCF27CA2820514F00C1893B /* CreateHistoryArray.swift in Sources */,
+				2FCF27CC2820515800C1893B /* DetailViewController.swift in Sources */,
+				2FCF27C2282050BD00C1893B /* HistoryViewController.swift in Sources */,
+				2FCF27C82820514F00C1893B /* ImageGifsAudio.swift in Sources */,
+				2FCF27C92820514F00C1893B /* ErasStatsBuilder.swift in Sources */,
 				2F0897AB2819F80E00341F69 /* SceneDelegate.swift in Sources */,
 				2F1DE303281A0AEF0034E994 /* SwiftGifCommon.swift in Sources */,
 				2F861271281CDD24004626EB /* TeamDataClass.swift in Sources */,
+				2F94455E28204DB300052C36 /* ScheduleViewControllerNew.swift in Sources */,
 				2F1DE2F72819FAEB0034E994 /* TeamViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
